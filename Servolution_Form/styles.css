@@ -12,6 +12,8 @@ form {
   max-width: 500px;
   min-width: 300px;
   margin: 10 auto;
+  background-color: #dddddd;
+  padding: 20;
 }
 
 fieldset {
@@ -32,6 +34,8 @@ h1, p {
 input, textarea, select {
   min-height: 2em;
   width: 100%;
+  border: none;
+  background-color: #eeeeee;
 }
 
 label {
