@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Servolution Form</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylsheed href='styles.css'>
+  </head>
+
+  <body>
+    <h1 id='title'>Servolution Form</h1>
+    <p id='description'>Thank you for your time</p>
+
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label' for='name'>Name
+          <input id='name' name='name' type='text' required placeholder='John Doe'>
+        </label>
+        <label id='email-label' for='email'>Email
+          <input id='email' name='email' type='email' required placeholder= "123@gmail.com">
+        </label>
+        <label id='number-label' for='age'>Age
+          <input id='age' name='age' type='number' min=12 max=120 required placeholder=18>
+        </label>
+        <label for='campus'>Which campus are you attending?
+          <select id='dropdown' name='campus'>
+            <option value=''>(select one)</option>
+            <option value='mel'>Melbourne</option>
+            <option value='syd'>Sydney</option>
+            <option value='sin'>Singapore</option>
+            <option value='pm'>Port Moresby</option>
+            <option value='ct'>Cape Town</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select your ministry</legend>
+        <label for='boom'>
+          <input id='boom' name='ministry' type='radio' value='boom' class='inline' checked> Planetboom
+        </label>
+        <label for='uni'>
+          <input id='uni' name='ministry' class='inline'type='radio' value='uni'> Planetuni
+        </label>
+        <label for='adult'>
+          <input id='adult' name='ministry' class='inline'type='radio' value='adult'> Adult
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose the area that you want to serve</legend>
+        <label for='connect-lounge'>
+          <input id='connect-lounge' name='serving-area' type='checkbox' value='connect-lounge' class='inline'> Connect Lounge
+        </label>
+        <label for='media'>
+          <input id='media' name='serving-area' type='checkbox' value='media' class='inline'> Media
+        </label>
+        <label for='music'>
+          <input id='music' name='serving-area' type='checkbox' value='music' class='inline'> Music
+        </label>
+        <label for='it'>
+          <input id='it' name='serving-area' type='checkbox' value='it' class='inline'> IT
+        </label><label for='production'>
+          <input id='production' name='serving-area' type='checkbox' value='production' class='inline'> Production
+        </label>
+        <label for='comments'>Why you want to serve in this area?
+          <textarea name='comments' rows=3 cols=30 required></textarea>
+        </label>
+      </fieldset>
+      <input id='submit' type='submit' value='Submit'></button>
+    </form>
+  </body>
+</html>
